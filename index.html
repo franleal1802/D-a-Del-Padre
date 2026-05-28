@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -296,23 +296,27 @@ Porque muchas veces, detrás de cada “reto”, cada sacrificio y cada preocupa
 </div>
 
 <!-- CONFETTI -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
 <script>
 
-function lanzarConfetti() {
+window.addEventListener("load", () => {
 
-    confetti({
-        particleCount: 150,
-        spread: 90,
-        origin: { y: 0.6 }
-    });
+    setTimeout(() => {
 
-}
+        confetti({
+            particleCount: 250,
+            spread: 120,
+            startVelocity: 45,
+            origin: { y: 0.7 }
+        });
 
-window.onload = lanzarConfetti;
+    }, 800);
+
+});
 
 </script>
+
 
 </body>
 </html>
