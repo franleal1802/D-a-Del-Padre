@@ -295,14 +295,19 @@ Porque muchas veces, detrás de cada “reto”, cada sacrificio y cada preocupa
 
 </div>
 
+
 <!-- CONFETTI FINAL -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
 <script>
 
-window.addEventListener("load", () => {
+window.addEventListener("scroll", () => {
 
-    setTimeout(() => {
+    const footer = document.querySelector(".footer");
+    const posicion = footer.getBoundingClientRect().top;
+    const pantalla = window.innerHeight;
+
+    if(posicion < pantalla){
 
         confetti({
             particleCount: 250,
@@ -311,13 +316,13 @@ window.addEventListener("load", () => {
             origin: { y: 0.7 }
         });
 
-    }, 800);
+    }
 
 });
 
 </script>
-
-
+    
 </body>
+    
 </html>
 
