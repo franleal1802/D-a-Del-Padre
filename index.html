@@ -205,9 +205,9 @@ li{
 
 <div class="container">
 
-<h1>🔧🔥 COMUNICADO OFICIAL 🔥🔨</h1>
+<h1>COMUNICADO OFICIAL📢</h1>
 
-<h2> 💕Comité Oficial de Mamás Organizadas del LTP😘</h2>
+<h2> 💕Comité Oficial de Mamás y Mamacitas Organizadas del LTP😘</h2>
 
 <div class="section">
 
@@ -216,11 +216,11 @@ Se informa a la comunidad educativa que, durante las últimas semanas, se ha det
 </p>
 
 <ul>
-<h3>“No me cambien el canal”🤬</h3>
-<h3>“Yo lo puedo arreglar”😎</h3>
-<h3>“Guarden eso, puede servir”⚙️</h3>
-<h3>“¿Quién tocó mis herramientas?”🛠️</h3>
-<h3>“Prende el carbón nomás” 🔥</h3>
+<h4>“No me cambien el canal”🤬</h4>
+<h4>“Yo lo puedo arreglar”😎</h4>
+<h4>“Guarden eso, puede servir”⚙️</h4>
+<h4>“¿Quién tocó mis herramientas?”🛠️</h4>
+<h4>“Prende el carbón nomás” 🔥</h4>
 </ul>
 
 <p style="margin-top:20px;">
@@ -254,7 +254,7 @@ Debido a esta situación, se convoca oficialmente a todos los padres y machos al
 
 <div class="section warning">
 
-<h3>⚠️ Advertencia importante ⚡</h3>
+<h3>⚠️ Advertencia importante⚡</h3>
 
 <ul>
 <li>Ataques inesperados de cariño</li>
@@ -294,32 +294,26 @@ Porque muchas veces, detrás de cada “reto”, cada sacrificio y cada preocupa
 </div>
 
 </div>
-```html id="c7v4mt"
-<!-- CONFETTI / COTILLÓN -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<!-- CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
 <script>
 
-setInterval(() => {
-    confetti({
-        particleCount: 3,
-        angle: 60,
-        spread: 70,
-        origin: { x: 0 }
-    });
+function lanzarConfetti() {
 
     confetti({
-        particleCount: 3,
-        angle: 120,
-        spread: 70,
-        origin: { x: 1 }
+        particleCount: 150,
+        spread: 90,
+        origin: { y: 0.6 }
     });
 
-}, 600);
+}
+
+window.onload = lanzarConfetti;
 
 </script>
-```
 
 </body>
 </html>
-```
+
